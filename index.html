@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POTM Castings</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    header { background: #000; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 24px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    .hero { background: #eaeaea; padding: 80px 40px; text-align: center; }
+    .hero h2 { font-size: 36px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; }
+    .btn { display: inline-block; padding: 10px 20px; background: #000; color: #fff; text-decoration: none; border-radius: 5px; }
+    .section { padding: 60px 40px; }
+    .castings { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .card h3 { margin-bottom: 10px; }
+    .card p { font-size: 14px; margin-bottom: 10px; }
+    footer { text-align: center; padding: 20px; background: #000; color: #fff; }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 28px; }
+      .hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>POTM Castings</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Open Castings</a>
+      <a href="#">Submit</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Next Role</h2>
+    <p>Casting calls from the heart of Paris to the world.</p>
+    <a href="#" class="btn">View Open Castings</a>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align:center; margin-bottom: 40px;">Latest Casting Calls</h2>
+    <div class="castings">
+      <div class="card">
+        <h3>Short Film: “Lost in Paris”</h3>
+        <p>Looking for a female lead, 20-30 yrs, fluent in French.</p>
+        <a href="#" class="btn">Apply Now</a>
+      </div>
+      <div class="card">
+        <h3>Commercial: Coffee Brand</h3>
+        <p>Male & female roles, all ethnicities, non-speaking part.</p>
+        <a href="#" class="btn">Apply Now</a>
+      </div>
+      <div class="card">
+        <h3>Music Video: Indie Artist</h3>
+        <p>Expressive dancer needed, shooting late April.</p>
+        <a href="#" class="btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Production on the Move. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
